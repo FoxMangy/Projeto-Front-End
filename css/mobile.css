@@ -3,7 +3,7 @@
 
     /* Ajuste do cabeçalho (header) no mobile */
 
-    header {
+    #main_menu {
         flex-direction:row;
         font-size:30px;
         position:relative;
@@ -14,7 +14,7 @@
 
     /* Seta de abrir e fechar o menu no mobile */
 
-    .botao_seta {
+    #main_menu .botao_seta {
         background:transparent;
         display:flex;
         position:absolute;
@@ -26,36 +26,41 @@
         transform:translateX(-50%) rotate(0deg);
         transition:transform 0.3s ease;
     }
-
-    /* Estados do cabeçalho (header) quando estiver com o menu fechado */
-
-    header.fechado nav {
-        max-height:0px;
-    }
-
-    header.fechado {
+    
+    /*Esconder as opções dentro do cabeçalho quando estiver fechado*/
+    
+    #main_menu.fechado {
         height:124px;
         overflow:hidden;
     }
 
-    header.fechado .botao_seta {
+    #main_menu.fechado nav {
+        max-height:0px;
+    }
+
+    /*Rotacionar a seta quando o menu for fechado*/
+
+    #main_menu.fechado .botao_seta {
         transform:translateX(-50%) rotate(180deg);
         bottom:-15px;
     }
 
-    .main_logo {
+    /*Ajustando a logo no mobile*/
+
+    #main_menu .main_logo {
         max-width:300px;
         height:auto;
     }
 
-    nav {
-        max-height:280px;   /* Large enough to fit the whole menu */
+    /*Ajustando as opções no mobile*/
+
+    #main_menu nav {
+        max-height:280px;
         overflow:hidden;
         transition:max-height 0.3s ease;
     }
 
-
-    nav ul {
+    #main_menu nav ul {
         flex-direction:column;
         align-items:left;
         padding:3px 3px;
