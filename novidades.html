@@ -2,33 +2,34 @@
 <html lang="pt-br">
 
     <head>
-        <title>Novidades</title>
+        <title>Página Inicial</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile.css">
         <link rel="icon"  href="">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <style>
-            
-        </style>
-
     </head>
 
     <body>
 
         <!-- Menu de Navegação-->
-         <header>
-            <img src="imagens/icones/logo_no_bg.png" alt="Logo Principal" class="main_logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Página Inicial</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="novidades.html" class="ativo">Novidades</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
+         <header id="menu">
+             <img src="imagens/icones/logo_no_bg.png" alt="Logo Principal" class="main_logo">
+             <nav>
+                 <ul>
+                     <li><a href="index.html">Página Inicial</a></li>
+                     <li><a href="produtos.html">Produtos</a></li>
+                     <li><a href="novidades.html" class="ativo">Novidades</a></li>
+                     <li><a href="contato.html">Contato</a></li>
+                     <li><a href="sobre.html">Sobre</a></li>
                 </ul>
+                <button class="botao_seta" id="botao_menu">▼</button>
             </nav>
-         </header>
+        </header>
+
+        <script src="js/menu_mobile.js">
+            //Script de menu retrátil no mobile
+        </script>
 
     </body>
 

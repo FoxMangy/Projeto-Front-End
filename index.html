@@ -4,6 +4,7 @@
     <head>
         <title>Página Inicial</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile.css">
         <link rel="icon"  href="">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,18 +27,8 @@
             </nav>
         </header>
 
-         <!-- Script de menu retrátil no mobile -->
-        <script>
-            //Achando qual o botão que vai ser utilizado pelo script - salvo como botao
-            const botao=document.getElementById("botao_menu");
-            //Achando qual o ID vai ser modificado dentro desse script - salvo como cabecalho
-            const cabecalho=document.getElementById("menu");
-            //Quando o botão especificado receber um click, ele vai realizar o que está dentro dos {}
-            botao.addEventListener("click", () => {
-                //Vai adicionar ou remover a tag "fechado" do que foi salvo como "cabecalho" 
-                //Logo cabecalho = ID menu = header / header -> header.fechado e vice versa
-                cabecalho.classList.toggle("fechado");
-        });
+        <script src="js/menu_mobile.js">
+            //Script de menu retrátil no mobile
         </script>
 
     </body>
