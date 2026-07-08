@@ -7,28 +7,38 @@
         <link rel="icon"  href="">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <style>
-            
-        </style>
-
     </head>
 
     <body>
 
         <!-- Menu de Navegação-->
-         <header>
-            <img src="imagens/icones/logo_no_bg.png" alt="Logo Principal" class="main_logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html" class="ativo">Página Inicial</a></li>
-                    <li><a href="produtos.html">Produtos</a></li>
-                    <li><a href="novidades.html">Novidades</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
+         <header id="menu">
+             <img src="imagens/icones/logo_no_bg.png" alt="Logo Principal" class="main_logo">
+             <nav>
+                 <ul>
+                     <li><a href="index.html" class="ativo">Página Inicial</a></li>
+                     <li><a href="produtos.html">Produtos</a></li>
+                     <li><a href="novidades.html">Novidades</a></li>
+                     <li><a href="contato.html">Contato</a></li>
+                     <li><a href="sobre.html">Sobre</a></li>
                 </ul>
+                <button class="botao_seta" id="botao_menu">▼</button>
             </nav>
-         </header>
+        </header>
+
+         <!-- Script de menu retrátil no mobile -->
+        <script>
+            //Achando qual o botão que vai ser utilizado pelo script - salvo como botao
+            const botao=document.getElementById("botao_menu");
+            //Achando qual o ID vai ser modificado dentro desse script - salvo como cabecalho
+            const cabecalho=document.getElementById("menu");
+            //Quando o botão especificado receber um click, ele vai realizar o que está dentro dos {}
+            botao.addEventListener("click", () => {
+                //Vai adicionar ou remover a tag "fechado" do que foi salvo como "cabecalho" 
+                //Logo cabecalho = ID menu = header / header -> header.fechado e vice versa
+                cabecalho.classList.toggle("fechado");
+        });
+        </script>
 
     </body>
 

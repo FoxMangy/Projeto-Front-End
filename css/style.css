@@ -5,9 +5,7 @@
 }
 
 body {
-
     background-color:#1C1612;
-
 }
 
 header {
@@ -19,19 +17,23 @@ header {
 }
 
 .main_logo {
-    width: 480px;
-    height: auto;
+    max-width:480px;
+    height:auto;
+}
+
+.botao_seta {
+    display:none;
 }
 
 nav ul {
+    gap:5px;
+    padding:0px 0px;
     list-style:none;
     display:inline-flex;
     justify-content:center;
-    gap:5px;
     background-color:#241A10;
     border:2px solid #FA971F;
     border-radius:26px;
-    padding:0px 0px;
 }
 
 nav ul li a {
@@ -57,4 +59,70 @@ nav ul li a:hover {
 
 .ativo:hover{
     color:#1C1612;
+}
+
+/* Mudanças para funcionar no mobile */
+@media (max-width: 768px) {
+
+    /* Ajuste do cabeçalho (header) no mobile */
+
+    header {
+        flex-direction:row;
+        font-size:30px;
+        position:relative;
+        border:3px solid #18120f;
+        height:390px;
+        transition:height 0.3s ease;
+    }
+
+    /* Seta de abrir e fechar o menu no mobile */
+
+    .botao_seta {
+        background:transparent;
+        display:flex;
+        position:absolute;
+        font-size:40px;
+        color:#faa844;
+        border:0px;
+        left:50%;
+        bottom:-7px;
+        transform:translateX(-50%) rotate(0deg);
+        transition:transform 0.3s ease;
+    }
+
+    /* Estados do cabeçalho (header) quando estiver com o menu fechado */
+
+    header.fechado nav {
+        max-height:0px;
+    }
+
+    header.fechado {
+        height:124px;
+        overflow:hidden;
+    }
+
+    header.fechado .botao_seta {
+        transform:translateX(-50%) rotate(180deg);
+        bottom:-15px;
+    }
+
+    .main_logo {
+        max-width:300px;
+        height:auto;
+    }
+
+    nav {
+        max-height:280px;   /* Large enough to fit the whole menu */
+        overflow:hidden;
+        transition:max-height 0.3s ease;
+    }
+
+
+    nav ul {
+        flex-direction:column;
+        align-items:left;
+        padding:3px 3px;
+        display:flex;
+    } 
+
 }
