@@ -1,6 +1,12 @@
 /* Mudanças para funcionar no mobile */
 @media (max-width: 768px) {
 
+    /* Remoção do highlight ao interagir com algum botão */
+
+    * {
+    -webkit-tap-highlight-color:transparent;
+    }
+
     /* Ajuste do cabeçalho (header) no mobile */
 
     #main_menu {
@@ -24,18 +30,18 @@
         left:50%;
         bottom:-7px;
         transform:translateX(-50%) rotate(0deg);
-        transition:transform 0.3s ease;
+        transition:transform 0.3s ease, bottom 0.3s ease;
     }
     
     /*Esconder as opções dentro do cabeçalho quando estiver fechado*/
     
     #main_menu.fechado {
         height:124px;
-        overflow:hidden;
     }
 
     #main_menu.fechado nav {
         max-height:0px;
+        overflow:hidden;
     }
 
     /*Rotacionar a seta quando o menu for fechado*/
@@ -62,7 +68,6 @@
 
     #main_menu nav ul {
         flex-direction:column;
-        align-items:left;
         padding:3px 3px;
         display:flex;
     } 
