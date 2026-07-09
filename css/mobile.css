@@ -2,24 +2,21 @@
 @media (max-width: 768px) {
 
     /* Remoção do highlight ao interagir com algum botão */
-
     * {
     -webkit-tap-highlight-color:transparent;
     }
 
     /* Ajuste do cabeçalho (header) no mobile */
-
     #main_menu {
         flex-direction:row;
         font-size:20px;
         position:relative;
         border:3px solid #18120f;
-        height:470px;
+        height:402px;
         transition:height 0.3s ease;
     }
 
     /* Seta de abrir e fechar o menu no mobile */
-
     #main_menu .botao_seta {
         background:transparent;
         display:flex;
@@ -28,13 +25,12 @@
         color:#faa844;
         border:0px;
         left:50%;
-        bottom:-3px;
+        bottom:-8px;
         transform:translateX(-50%) rotate(0deg);
         transition:transform 0.3s ease, bottom 0.3s ease;
     }
     
     /*Esconder as opções dentro do cabeçalho quando estiver fechado*/
-    
     #main_menu.fechado {
         height:124px;
     }
@@ -45,21 +41,18 @@
     }
 
     /*Rotacionar a seta quando o menu for fechado*/
-
     #main_menu.fechado .botao_seta {
         transform:translateX(-50%) rotate(180deg);
         bottom:-15px;
     }
 
     /*Ajustando a logo no mobile*/
-
     #main_menu .main_logo {
         max-width:300px;
         height:auto;
     }
 
-    /*Ajustando as opções no mobile*/
-
+    /*Ajustando as opções de navegação no mobile*/
     #main_menu nav {
         max-height:350px;
         overflow:hidden;
@@ -70,6 +63,15 @@
         flex-direction:column;
         padding:20px 3px;
         display:flex;
+        background-color:#241A10;
+        border:2px solid #FA971F;
+        border-radius:26px;
+        gap:24px;
     } 
+
+    /* Remove a animação da linha das opções no mobile */
+    #main_menu nav ul li a:hover::after{
+        width: 0%;
+    }
 
 }

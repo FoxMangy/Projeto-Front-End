@@ -18,6 +18,13 @@ body {
     font-display:swap;
 }
 
+@font-face {
+    font-family:"hakuna";
+    src:url('fonts/HakunaSans.otf') format('opentype');
+    font-style:normal;
+    font-display:swap;
+}
+
 /* Cabeçalho */
 #main_menu {
     background-color:#1a130b;
@@ -51,11 +58,11 @@ body {
 #main_menu nav ul li a {
     text-decoration:none;
     position:relative;
-    font-size:25px;
+    font-size:22px;
     padding:10px 0;
     transition:.3s;
     color:#F3E2C4;
-    font-family:'elms';
+    font-family:'hakuna';
 }
 
 /* Mudança no texto com o mouse em cima */
