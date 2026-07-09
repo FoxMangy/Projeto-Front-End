@@ -11,10 +11,10 @@
 
     #main_menu {
         flex-direction:row;
-        font-size:30px;
+        font-size:20px;
         position:relative;
         border:3px solid #18120f;
-        height:390px;
+        height:470px;
         transition:height 0.3s ease;
     }
 
@@ -28,7 +28,7 @@
         color:#faa844;
         border:0px;
         left:50%;
-        bottom:-7px;
+        bottom:-3px;
         transform:translateX(-50%) rotate(0deg);
         transition:transform 0.3s ease, bottom 0.3s ease;
     }
@@ -61,14 +61,14 @@
     /*Ajustando as opções no mobile*/
 
     #main_menu nav {
-        max-height:280px;
+        max-height:350px;
         overflow:hidden;
         transition:max-height 0.3s ease;
     }
 
     #main_menu nav ul {
         flex-direction:column;
-        padding:3px 3px;
+        padding:20px 3px;
         display:flex;
     } 
 

@@ -1,3 +1,4 @@
+/* Removendo caixa inicial dos itens */
 * {
     margin: 0;
     padding: 0;
@@ -8,12 +9,14 @@ body {
     background-color:#1C1612;
 }
 
+/* Cabeçalho */
 #main_menu {
     background-color:#1a130b;
     padding:20px;
     text-align:center;
     font-size:40px;
     border-radius:4px;
+    border:3px solid #18120f;
 }
 
 #main_menu .main_logo {
@@ -21,44 +24,60 @@ body {
     height:auto;
 }
 
+/* Escondendo botão do menu mobile */
 #main_menu .botao_seta {
     display:none;
 }
 
+/* Opções de navegação */
 #main_menu nav ul {
-    gap:5px;
-    padding:0px 0px;
-    list-style:none;
-    display:inline-flex;
+    display:flex;
     justify-content:center;
-    background-color:#241A10;
-    border:2px solid #FA971F;
-    border-radius:26px;
+    gap:40px;
+    list-style:none;
+    border:none;
 }
 
+/* Texto nas opções de navegação */
 #main_menu nav ul li a {
     text-decoration:none;
-    background-color:#241A10;
-    color:#4A3520;
-    padding:6px 12px;
-    border-radius:24px;
-    display:flex;
-    flex-wrap:wrap;
+    position:relative;
+    font-size:24px;
+    padding:10px 0;
+    transition:.3s;
+    color:#F3E2C4;
 }
 
+/* Mudança no texto com o mouse em cima */
 #main_menu nav ul li a:hover {
-    color:#9e7145;
+    color:#FA971F;
     transition:0.5s;
 }
 
-/* Destaque para a página que está sendo acessada no menu */
-#main_menu .ativo {
-    background-color:#FA971F;
-    color:#1C1612;
+/* Linha animada */
+#main_menu nav ul li a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0%;
+    height:2px;
+    background:#FA971F;
+    transition:.3s;
 }
 
-/* Prevenindo para que o texto destacado não mude de cor */
-#main_menu .ativo:hover {
-    color:#1C1612;
+/* Faz a linha crescer quando passa o mouse */
+#main_menu nav ul li a:hover::after{
+    width: 100%;
 }
 
+/* Destaque no link da página atual */
+#main_menu nav ul li a.ativo{
+    color:#FA971F;
+    font-weight:bold;
+}
+
+/* Linha fixa no link da página atual */
+#main_menu nav ul li a.ativo::after{
+    width: 100%;
+}
