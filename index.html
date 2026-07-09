@@ -8,6 +8,14 @@
         <link rel="icon"  href="imagens/icones/fritas.png">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <style>
+            body {
+                background-image:url('imagens/bg/mainpage.png');
+                background-size:cover;
+            } 
+        </style>
+
     </head>
 
     <body>
@@ -30,6 +38,125 @@
         <script src="js/menu_mobile.js">
             //Script de menu retrátil no mobile
         </script>
+
+        <style>
+            
+            /* Customização de Conteúdo */
+            .conteudo_principal {
+                max-width: 1200px;
+                margin: 40px auto;
+                padding: 0 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 60px;
+            }
+
+            /* Fazendo seções */
+            .secao_conteudo {
+                display:flex;
+                align-items:center;
+                gap:40px;
+                background:rgba(26, 19, 11, 0.85);
+                border-radius:16px;
+                padding:30px;
+                backdrop-filter:blur(4px);
+                border:1px solid rgba(250, 151, 31, 0.3);
+                transition:transform 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .secao_conteudo:hover {
+                transform:translateY(-4px);
+                box-shadow:0 12px 40px rgba(250, 151, 31, 0.15);
+            }
+
+            /* Container da imagem */
+            .imagem_container {
+                flex:1;
+                min-width:0;
+            }
+
+            .imagem_grande {
+                width:100%;
+                max-width:500px;
+                height:auto;
+                display:block;
+                border-radius:12px;
+                border:2px solid rgba(250, 151, 31, 0.3);
+                transition:border-color 0.3s ease;
+            }
+
+            .secao_conteudo:hover .imagem_grande {
+                border-color:#FA971F;
+            }
+
+            /* Container de texto */
+            .texto_container {
+                flex:1;
+                padding:10px 0;
+            }
+
+            /* Estilo do título */
+            .texto_container h2 {
+                font-family:'hakuna', sans-serif;
+                font-size:32px;
+                color:#FA971F;
+                margin-bottom:16px;
+                letter-spacing:1px;
+            }
+
+            /* Estilo do texto */
+            .texto_container p {
+                font-family:'elms', sans-serif;
+                font-size:18px;
+                color:#F3E2C4;
+                line-height:1.7;
+                margin-bottom:20px;
+            }
+
+            /* Invertendo orientação do conteúdo a cada seção */
+            .secao_conteudo:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+
+        </style>
+
+        <!-- Conteúdo da Página -->
+        <main class="conteudo_principal">
+
+            <!-- 1 -->
+            <section class="secao_conteudo">
+                <div class="imagem_container">
+                    <img src="imagens/conteudo/Billboard_Mockup.png" class="imagem_grande">
+                </div>
+                <div class="texto_container">
+                    <h2>Um ponto de encontro na cidade</h2>
+                    <p>Com um ambiente aconchegante, a Parada Certa é o lugar ideal para desacelerar e aproveitar bons momentos. Um espaço acolhedor para amigos, famílias e casais que buscam qualidade e boa companhia.</p>
+                </div>
+            </section>
+
+            <!-- 2 -->
+            <section class="secao_conteudo">
+                <div class="imagem_container">
+                    <img src="imagens/conteudo/Placa_loja.png" class="imagem_grande">
+                </div>
+                <div class="texto_container">
+                    <h2>Sabor artesanal em cada detalhe</h2>
+                    <p>Na Parada Certa, cada hambúrguer é preparado com carnes selecionadas e ingredientes frescos. Nossas receitas combinam o clássico ao criativo, sempre com um toque artesanal. Mais que uma refeição, uma experiência que desperta os sentidos.</p>
+                </div>
+            </section>
+
+            <!-- 3 -->
+            <section class="secao_conteudo">
+                <div class="imagem_container">
+                    <img src="imagens/conteudo/Motoboy.png" class="imagem_grande">
+                </div>
+                <div class="texto_container">
+                    <h2>O sabor da Parada Certa onde você estiver</h2>
+                    <p>Não dá para sair? A gente vai até você! Oferecemos delivery com a mesma qualidade da loja, embalado com cuidado para chegar quentinho. Peça pelo app e aproveite o melhor da Parada Certa em casa.</p>
+                </div>
+            </section>
+
+        </main>
 
     </body>
 

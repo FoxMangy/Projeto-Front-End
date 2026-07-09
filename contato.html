@@ -2,12 +2,68 @@
 <html lang="pt-br">
 
     <head>
-        <title>Parada Certa - Contato</title>
+        <title>Produtos</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/mobile.css">
-        <link rel="icon"  href="imagens/icones/fritas.png">
+        <link rel="icon"  href="">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+         <style>
+        h1 {
+            text-align: center;
+             color: #f5f5f5;
+        }
+
+        h2 {
+            text-align: center;
+            color: #f5f5f5;
+        }
+
+        p {
+            text-align: center;
+            color: #f5f5f5;
+        }
+
+        nav {
+            text-align: center;
+            color: #f5f5f5;
+        }
+
+        h3 {
+            text-align: center;
+             color: #f5f5f5;
+        }
+
+        .container {
+            width: 360px;
+            margin: 0 auto;  
+        }
+
+        
+        form input{
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 8px;
+     border: 1px solid transparent;
+            background-color: #fa812a;
+        }
+        textarea {
+            width: 100%;
+            resize: none;
+            padding: 8px;
+            border: 1px solid transparent;
+            background-color: #fa812a;
+        }
+        button{
+            padding: 8px;
+            border: 1px solid transparent;
+            margin-top: 8px;
+            background-color: #fa812a;
+            font-size: 16px;
+            font-weight: bold;
+        }
+    </style>
     </head>
 
     <body>
@@ -27,10 +83,27 @@
             </nav>
         </header>
 
-        <script src="js/menu_mobile.js">
-            //Script de menu retrátil no mobile
-        </script>
+        <main class="container">
+        <h2>FICOU COM ALGUMA DÚVIDA?</h2>
+        <p>Entre em contato preenchendo o formulario e nossa equipe o ajudara</p>
 
-    </body>
-
+            <div class="container">
+                <h1>FORMULARIO DE CONTATO</h1>
+                <form action="">
+                    <input type="text" name="name" class="form-control" placeholder="nome" required>
+                    <input type="email" name="email" class="form-control" placeholder="email" required>
+                    <textarea name="message" class="form-control" placeholder="mensagem" rows="10"></textarea>
+                    <button type="submit">enviar mensagem</button>
+                </form>
+            </div>
+            <!-- informações empresa-->
+        <section class="informacoes">
+            <h3>IFORMAÇÕES</h3>
+            <p><strong>Endereço:</strong> Rua dos burgues, 123 - Centro</p>
+            <p><strong>Telefone:</strong> (21) 99999-9999</p>
+            <p><strong>E-mail:</strong> contato@paradacerta.com.br</p>
+            <script src="js/menu_mobile.js">
+                //Script de menu retrátil no mobile
+            </script>
+</body>
 </html>

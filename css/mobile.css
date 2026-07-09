@@ -32,7 +32,7 @@
     
     /*Esconder as opções dentro do cabeçalho quando estiver fechado*/
     #main_menu.fechado {
-        height:124px;
+        height:126px;
     }
 
     #main_menu.fechado nav {
@@ -72,6 +72,28 @@
     /* Remove a animação da linha das opções no mobile */
     #main_menu nav ul li a:hover::after{
         width: 0%;
+    }
+
+
+    /* Menu Principal - Responsividade */
+
+    .secao_conteudo {
+        flex-direction:column !important;
+        text-align:center;
+        padding:25px;
+    }
+
+    .imagem_grande {
+        max-width:100%;
+        margin:0 auto;
+    }
+
+    .texto_container h2 {
+        font-size:28px;
+    }
+
+    .texto_container p {
+        font-size:16px;
     }
 
 }
