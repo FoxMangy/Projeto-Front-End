@@ -9,6 +9,15 @@ body {
     background-color:#1C1612;
 }
 
+/* Adicionando Fontes */
+@font-face {
+    font-family:"elms";
+    src:url('fonts/ElmsSans.ttf') format('truetype');
+    font-weight:100 900;
+    font-style:normal;
+    font-display:swap;
+}
+
 /* Cabeçalho */
 #main_menu {
     background-color:#1a130b;
@@ -42,10 +51,11 @@ body {
 #main_menu nav ul li a {
     text-decoration:none;
     position:relative;
-    font-size:24px;
+    font-size:25px;
     padding:10px 0;
     transition:.3s;
     color:#F3E2C4;
+    font-family:'elms';
 }
 
 /* Mudança no texto com o mouse em cima */
