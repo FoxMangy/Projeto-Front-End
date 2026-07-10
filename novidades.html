@@ -1,36 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <title>Parada Certa - Novidades</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/mobile.css">
-        <link rel="icon"  href="imagens/icones/fritas.png">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parada Certa - Novidades</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="icon"  href="imagens/icones/fritas.png">
+</head>
 
-    <body>
+<body>
 
-        <!-- Menu de Navegação-->
+     <!-- Menu de Navegação-->
          <header id="main_menu">
              <img src="imagens/icones/logo_no_bg.png" alt="Logo Principal" class="main_logo">
              <nav>
                  <ul>
                      <li><a href="index.html">Página Inicial</a></li>
-                     <li><a href="novidades.html" class="ativo">Novidades</a></li>
+                     <li><a href="sobre_nos.html" >Sobre Nós</a></li>
                      <li><a href="produtos.html">Produtos</a></li>
+                     <li><a href="novidades.html" class="ativo">Novidades</a></li>
                      <li><a href="contato.html">Contato</a></li>
-                     <li><a href="sobre.html">Sobre</a></li>
                 </ul>
                 <button class="botao_seta" id="botao_menu">▼</button>
             </nav>
         </header>
 
-        <script src="js/menu_mobile.js">
-            //Script de menu retrátil no mobile
-        </script>
+    <main>
+        <div class="novidade">
+            <!-- Banner -->
+            <section id="banner_novidades">
+                <div class="texto_banner">
+                    <h2>Novidades da Semana</h2>
+                    <p>Confira os lançamentos, promoções e tudo o que está chegando na nossa hamburgueria.</p>
+                </div>
+            </section>
 
-    </body>
+            <!-- Eventos -->
+            <section id="eventos" class="card_novidade">
+                <h2>📅 Próximos Eventos</h2>
+                <p>🎵 Música ao vivo todos os sábados.</p>
+                <p>🍔 Festival do Hambúrguer no próximo mês.</p>
+                <p>🥤 Novos sabores de milk-shake chegando em breve.</p>
+            </section>
+
+            <!-- Burger do mês -->
+            <section class="conteudo_secao2">
+
+                <div class="imagem_secao">
+                    <img src="imagens/conteudo/burger_mes.jpg">
+        
+                </div>
+
+                <div class="texto_secao">
+                    <h2>🍔 Burger do Mês</h2>
+                    <p>
+                        Todos os meses criamos um hambúrguer exclusivo preparado
+                        com ingredientes especiais para oferecer uma experiência
+                        diferente aos nossos clientes.
+                    </p>
+                </div>
+
+            </section>
+
+            <!-- Promoção -->
+            <section class="conteudo_secao2">
+
+                <div class="imagem_secao">
+                    <img src="imagens/conteudo/combo.jpg" >
+                </div>
+                <div class="texto_secao">
+                    <h2>🔥 Promoção da Semana</h2>
+                    <p>
+                        Toda terça-feira você encontra nosso Combo Smash com preço
+                        especial. Aproveite para experimentar nossos hambúrgueres
+                        artesanais com batata frita e refrigerante.
+                    </p>
+                </div>
+                
+
+            </section>
+
+            <!-- Novidade: Milk-shakes -->
+            <section class="conteudo_secao2">
+
+                <div class="imagem_secao">
+                <img src="imagens/conteudo/milkshake.jpg.jpg">
+                </div>
+
+                <div class="texto_secao">
+                    <h2>🥤 Novos Milk-Shakes Premium</h2>
+                    <p>
+                        Para fechar sua noite com chave de ouro, lançamos três novos 
+                        sabores irresistíveis na Parada Certa: Ninho com Nutella, Caramelo Salgado 
+                        e Ovomaltine Crocante. Venha adoçar a sua semana!
+                    </p>
+            </div>
+
+        </section>
+       </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Parada Certa Hamburgueria - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/menu_mobile.js"></script>
+
+</body>
 
 </html>

@@ -1,9 +1,16 @@
 /* Mudanças para funcionar no mobile */
 @media (max-width: 768px) {
 
+    /* ======== Página Inicial e Barra de navegação ======== */
     /* Remoção do highlight ao interagir com algum botão */
     * {
     -webkit-tap-highlight-color:transparent;
+    }
+
+    body {
+        background-image:url('/imagens/bg/circles.png');
+        background-size:400%;
+        background-color:#1C1612;
     }
 
     /* Ajuste do cabeçalho (header) no mobile */
@@ -99,7 +106,8 @@
         font-size:16px;
     }
    
-    /* Ajustes na página de Contato*/
+    /* ======== Contato ======== */
+
     .formulario {
     max-width: 420px;
     }
@@ -140,5 +148,86 @@
     .formulario textarea {
         height: 160px;
     }
+
+    /* ======== Novidades ======== */
+
+    .novidade {
+        padding: 20px;
+    }
+
+    /* Banner */
+    .texto_banner {
+        padding: 20px 10px;
+    }
+
+    .texto_banner h2 {
+        font-size: 34px;
+    }
+
+    .texto_banner p {
+        font-size: 17px;
+    }
+
+    /* Cartão de Evento */
+    .card_novidade {
+        width: 100%;
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    /* Image/Text sections */
+    .conteudo_secao2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        margin: 40px 0;
+    }
+
+    /* Imagens */
+    .imagem_secao {
+        width: 100%;
+        text-align: center;
+    }
+
+    .imagem_secao img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+
+    /* Texto */
+    .texto_secao {
+        width: 100%;
+    }
+
+    .texto_secao h2 {
+        font-size: 30px;
+    }
+
+    .texto_secao p {
+        font-size: 18px;
+    }
+
+    /* ====== Produtos ====== */
+    .conteudo_secao2:nth-child(even) {
+        flex-direction: column;
+    }
+
+    #banner_produtos h1{
+        font-size:44px;
+    }
+
+    .grade_produtos{
+        grid-template-columns:1fr;
+    }
+
+    .card_produto img{
+        height:200px;
+    }
+
+
+
 
 }
