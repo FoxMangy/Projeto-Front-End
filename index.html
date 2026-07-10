@@ -43,12 +43,12 @@
             
             /* Customização de Conteúdo */
             .conteudo_principal {
-                max-width: 1200px;
-                margin: 40px auto;
-                padding: 0 20px;
-                display: flex;
-                flex-direction: column;
-                gap: 60px;
+                max-width:1200px;
+                margin:40px auto;
+                padding:0 20px;
+                display:flex;
+                flex-direction:column;
+                gap:60px;
             }
 
             /* Fazendo seções */
@@ -56,17 +56,18 @@
                 display:flex;
                 align-items:center;
                 gap:40px;
-                background:rgba(26, 19, 11, 0.85);
+                background:rgba(26, 19, 11, 0);
                 border-radius:16px;
                 padding:30px;
-                backdrop-filter:blur(4px);
-                border:1px solid rgba(250, 151, 31, 0.3);
+                backdrop-filter:blur(0px);
+                border:1px solid rgba(250, 151, 31, 0);
                 transition:transform 0.3s ease, box-shadow 0.3s ease;
             }
 
+            /* Destaque ao passar o mouse em cima */
             .secao_conteudo:hover {
                 transform:translateY(-4px);
-                box-shadow:0 12px 40px rgba(250, 151, 31, 0.15);
+                box-shadow:0 12px 40px rgba(250, 151, 31, 0);
             }
 
             /* Container da imagem */
@@ -111,6 +112,7 @@
                 color:#F3E2C4;
                 line-height:1.7;
                 margin-bottom:20px;
+                max-width: 480px;
             }
 
             /* Invertendo orientação do conteúdo a cada seção */
@@ -118,7 +120,37 @@
                 flex-direction: row-reverse;
             }
 
+            /* ========== BANNER PRINCIPAL ========== */
+
+            .banner-principal {
+                width:100%;
+                max-width:1500px;
+                margin:30px auto;
+                border-radius:16px;
+                overflow:hidden;
+                border:2px solid rgba(250, 151, 31, 0.3);
+                box-shadow:0 8px 30px rgba(0, 0, 0, 0.4);
+            }
+
+            .banner-principal img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+
+            @media (max-width: 768px) {
+                .banner-principal {
+                    border-radius: 10px;
+                    margin: 20px auto;
+                }
+            }
+
         </style>
+
+        <!-- Banner -->
+        <section class="banner-principal">
+            <img src="imagens/conteudo/banner.png">
+        </section>
 
         <!-- Conteúdo da Página -->
         <main class="conteudo_principal">

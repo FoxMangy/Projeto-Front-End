@@ -74,8 +74,11 @@
         width: 0%;
     }
 
-
-    /* Menu Principal - Responsividade */
+    /* Conteudo Principal - Responsividade */
+    .banner_principal {
+        border-radius:10px;
+        margin:20px auto;
+    }
 
     .secao_conteudo {
         flex-direction:column !important;
@@ -94,6 +97,48 @@
 
     .texto_container p {
         font-size:16px;
+    }
+   
+    /* Ajustes na página de Contato*/
+    .formulario {
+    max-width: 420px;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 30px auto;
+        padding: 0 20px;
+    }
+
+    .titulo-contato {
+        margin-bottom: 30px;
+    }
+
+    .conteudo-contato {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .informacoes {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .formulario {
+        width: 100%;
+        max-width: 420px;
+        margin-bottom: 80px;
+    }
+
+    .formulario input,
+    .formulario textarea,
+    .formulario button {
+        width: 90%;
+    }
+
+    .formulario textarea {
+        height: 160px;
     }
 
 }
