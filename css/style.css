@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image:url('../imagens/bg/circles.png');
+    background-image: url("../imagens/bg/circles.png");
     background-size:150%;
     background-color:#1C1612;
 }
